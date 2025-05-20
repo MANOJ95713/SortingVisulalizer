@@ -1,0 +1,146 @@
+
+
+
+.container{
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  align-items: center;
+  bottom: 10px;
+}
+
+.bars{
+  background: blue;
+  margin: 2px ;
+  display: inline-block;
+  
+}
+
+.btn{
+  background-color: rgb(47, 128, 178);
+  color: white;
+  padding: 1rem;
+  border-radius: 2rem;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+  
+}
+
+.btn-cont{
+  position: fixed;
+  top:20px;
+  display:flex;
+  gap:3rem;
+  align-items: center;
+  
+}
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.slider {
+  width: 250px;
+  height: 8px;
+  border-radius: 5px;
+  background: rgb(47, 128, 178);;
+  outline: none;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(47, 128, 178);;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(47, 128, 178);;
+  cursor: pointer;
+}
+select {
+  appearance: none; /* Removes default styling */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  background-color: #fff;
+  border: 2px solid #4A90E2;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  width: 21%;
+}
+
+/* Add arrow using background */
+select {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%234A90E2'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd' /%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  padding-right: 30px; /* Space for the arrow */
+}
+
+/* Hover effect */
+select:hover {
+  border-color: #357ABD;
+}
+
+/* Focus effect */
+select:focus {
+  border-color: #1E5A9A;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Disabled state */
+select:disabled {
+  background-color: #f2f2f2;
+  color: #888;
+  cursor: not-allowed;
+}
+
+input {
+  width: 10%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #4A90E2;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Focus effect */
+input:focus {
+  border-color: #1E5A9A;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Placeholder styling */
+input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Disabled state */
+input:disabled {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
