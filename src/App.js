@@ -1,6 +1,6 @@
 
 import './App.css';
-import SortingVisualizer from "./SortingVisualizer"
+import {SortingVisualizer} from "./SortingVisualizer"
 function App() {
   return (
     <div className='app'>

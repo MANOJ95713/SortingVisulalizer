@@ -4,7 +4,7 @@ import { Slider } from 'primereact/slider';
 import React from 'react'
 import ReactSlider from 'react-slider';
 
-const SortingVisualizer = () => {
+export const SortingVisualizer = () => {
     
     const [array,setArray]=useState([]);
     const [algorithm,setAlgorithm]=useState("");
